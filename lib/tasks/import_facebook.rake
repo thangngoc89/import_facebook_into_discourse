@@ -140,7 +140,7 @@ def fb_fetch_posts(group_id, until_time)
                AND created_time < #{time_of_last_imported_post}
              LIMIT 500"
     result = @graph.fql_query(query)
- 
+    p result
     break if result.count == 0 # No more posts to import
  
     # Add the results of this batch to the rest of the imported posts
