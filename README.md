@@ -19,6 +19,7 @@ Use at your own risk! Please test on a dummy Discourse install first.
 * Place `lib/tasks/import_facebook.rake` in your `lib/tasks` folder
 * In case of multisite prepend next command with: `export RAILS_DB=<your database>`
 * Run `rake import:facebook_group`
+* or `RAILS_ENV=production bundle exec rake import:facebook_group`
 
 # Todo
 
