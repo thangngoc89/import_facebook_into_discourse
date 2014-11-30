@@ -365,10 +365,12 @@ end
  
 def fb_username_to_dc(name)
   # Create username from full name, only letters and numbers
+  if name.present?
   username = name.gsub( /[^A-Za-z0-9]+/, '' ).downcase
  
   # Maximum length of a Discourse username is 15 characters
   username = username[0,15]
+  end
 end
  
 # Add colors to class String
