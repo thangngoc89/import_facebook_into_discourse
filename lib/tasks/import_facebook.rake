@@ -374,6 +374,7 @@ def fb_username_to_dc(name)
   else
   username = "vo_danh"
   end
+  puts username
 end
  
 # Add colors to class String
