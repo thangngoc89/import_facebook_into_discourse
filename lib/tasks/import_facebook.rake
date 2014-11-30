@@ -257,7 +257,7 @@ def dc_create_users_from_fb_writers
  
     # Create email address for user
     puts fb_writer['email']
-    puts dc_usernamme
+    puts dc_username
     if fb_writer['email'].nil? then
       dc_email = dc_username + "@localhost.fake"
     else
